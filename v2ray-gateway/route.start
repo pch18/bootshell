@@ -1,3 +1,5 @@
+!# /bin/sh
+
 ulimit -n 1000000
 
 ip rule add fwmark 1 table 100 
