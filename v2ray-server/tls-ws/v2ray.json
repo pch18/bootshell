@@ -1,0 +1,26 @@
+{
+  "inbounds": [
+    {
+      "port": 10000,
+      "listen": "127.0.0.1",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "$UUID",
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
