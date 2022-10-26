@@ -11,9 +11,8 @@ cat > /tmp/cert <<EOF
 certbot certonly \
 -a certbot-dns-aliyun:dns-aliyun \
 --certbot-dns-aliyun:dns-aliyun-credentials /tmp/credentials.ini \
---agree-tos --no-eff-email --keep \
--m ${DOMAIN} \
--d home.pch18.cn 
+--agree-tos --no-eff-email --keep --register-unsafely-without-email  \
+-d ${DOMAIN}
 EOF
 chmod 777 /tmp/cert
 
